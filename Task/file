@@ -1,0 +1,25 @@
+{
+    "name":"sugan",
+    "email":"sugan1224@gmail.com",
+    "password":"sugan@123"
+};
+
+{
+    "name":"suganth",
+    "email":"suganth1224@gmail.com",
+    "password":"suganth@123"
+};
+
+{
+    "name":"shrihari",
+    "email":"shiahri1267@gmail.com",
+    "password":"shrihari@123"
+}
+
+{
+    "parent_id":"3",
+    "task_name":"task-5",
+    "created_date":"2024-03-09",
+    "due_date":"2024-04-08"
+}
+
