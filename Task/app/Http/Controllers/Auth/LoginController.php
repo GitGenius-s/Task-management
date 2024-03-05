@@ -44,6 +44,7 @@ class LoginController extends Controller
         // dd('hi');
         if(Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
             $user = Auth::user();
+            // dd($user);
             $accessToken = $user->createToken('AppName')->accessToken;
     
             return response()->json(['access_token' => $accessToken], 200);

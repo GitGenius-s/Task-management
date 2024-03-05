@@ -19,4 +19,16 @@ class Task extends Model
     {
         return $this->hasMany(Task::class, 'parent_id', 'task_id');
     }
+
+    public function users()
+    {
+        return $this->hasMany(User::class);
+    }
+
+
+    public function assignedUsers()
+    {
+        return $this->belongsToMany(User::class, 'assigns', 'task_id', 'user_id')
+                   ->withPivot('status', 'assign_date', 'completed_date');
+    }
 }

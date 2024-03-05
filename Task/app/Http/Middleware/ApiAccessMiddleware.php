@@ -18,7 +18,11 @@ class ApiAccessMiddleware
         $allowedApis = [
             'api/sam',
             'api/create',
-            'api/show'
+            'api/show',
+            'api/assign',
+            'api/delete',
+            'api/update',
+            'api/userTask/{id}'
             // Add more allowed APIs here
         ];
 
